@@ -1,3 +1,4 @@
+// Varibales
 $base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.25;
 
@@ -17,11 +18,14 @@ $line-heights: (
   3: $base-line-height * 2
 );
 
+
+// Mixins
 @mixin type-setting($level: 0) {
   font-size: map-get($type-scale, $level);
   line-height: map-get($line-heights, $level);
 }
 
+// Settings
 p, li, button {@include type-setting(0)}
 
 h3 {@include type-setting(1)}

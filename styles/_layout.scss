@@ -1,0 +1,6 @@
+// Text max width
+$text-max-width: $base-font-size * 30;
+
+p {
+	max-width: $text-max-width;
+}
