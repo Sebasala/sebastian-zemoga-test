@@ -57,6 +57,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1, h2, h3, strong {
+  font-weight: 700;
+}
+
 p, li, button {
   font-size: 1rem;
   line-height: 1.25rem;
