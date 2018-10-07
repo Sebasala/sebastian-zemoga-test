@@ -89,4 +89,19 @@ p {
   max-width: 30rem;
 }
 
+header,
+.celebrity,
+.add-celebrity {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.add-celebrity {
+  background-image: url("../img/people.png");
+}
+.add-celebrity section {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /*# sourceMappingURL=stylesheet.css.map */
