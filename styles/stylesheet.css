@@ -220,6 +220,10 @@ header .down {
   background-position: center;
 }
 
+.celebrity section {
+  background-image: linear-gradient(transparent, black);
+}
+
 .percentage-up {
   background-color: rgba(28, 187, 180, 0.7);
 }
