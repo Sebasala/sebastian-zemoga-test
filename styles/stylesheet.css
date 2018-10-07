@@ -88,6 +88,17 @@ header,
   color: white;
 }
 
+nav,
+.veredict,
+.add-celebrity button,
+.social h2 {
+  text-transform: capitalize;
+}
+
+.closing h2 {
+  text-transform: uppercase;
+}
+
 p, li, button {
   font-size: 1rem;
   line-height: 1.25rem;
