@@ -9,3 +9,14 @@ body {
 h1, h2, h3, strong {
 	font-weight: 700;
 }
+
+// Font colors
+body,
+.days {
+	color: $black;
+}
+
+header,
+.celebrity {
+	color: white;
+}

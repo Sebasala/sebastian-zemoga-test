@@ -61,6 +61,16 @@ h1, h2, h3, strong {
   font-weight: 700;
 }
 
+body,
+.days {
+  color: #333333;
+}
+
+header,
+.celebrity {
+  color: white;
+}
+
 p, li, button {
   font-size: 1rem;
   line-height: 1.25rem;
