@@ -77,6 +77,12 @@ nav {
 	margin-bottom: $base-line-height;
 }
 
+.more {
+	p {
+		display: inline-block;
+	}
+}
+
 main > section {
 	margin-bottom: $base-line-height;
 }

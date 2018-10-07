@@ -88,6 +88,10 @@ header,
   color: white;
 }
 
+.more p {
+  text-decoration: underline;
+}
+
 nav,
 .veredict,
 .add-celebrity button,
@@ -226,6 +230,10 @@ nav {
 
 .featured {
   margin-bottom: 1.25rem;
+}
+
+.more p {
+  display: inline-block;
 }
 
 main > section {
