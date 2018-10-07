@@ -10,6 +10,29 @@ h1, h2, h3, strong {
 	font-weight: 700;
 }
 
+li {
+	h1 {
+		font-weight: 400;
+	}
+}
+
+.pretitle {
+	font-weight: 400;
+}
+
+.votes,
+.add-celebrity {
+	h2 {
+		font-weight: 400;
+	}
+}
+
+.social {
+	h2 {
+		font-weight: 400;
+	}
+}
+
 // Font colors
 body,
 .days {
