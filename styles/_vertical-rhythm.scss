@@ -3,11 +3,11 @@ $base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.25;
 
 $type-scale: (
-  -1: 0.75rem,  // small text
+  -1: 0.667rem,  // small text
   0: 1rem,      // body text
-  1: 1.333rem,  // large text
-  2: 1.777rem,   // main heading
-  3: 2.369rem
+  1: 1.5rem,  // large text
+  2: 2.25rem,   // main heading
+  3: 3.375rem
 );
 
 $line-heights: (
@@ -15,7 +15,7 @@ $line-heights: (
   0: $base-line-height,
   1: $base-line-height * 2,
   2: $base-line-height * 2,
-  3: $base-line-height * 2
+  3: $base-line-height * 3
 );
 
 
@@ -25,7 +25,7 @@ $line-heights: (
   line-height: map-get($line-heights, $level);
 }
 
-// Settings
+// Default settings
 p, li, button {@include type-setting(0)}
 
 h3 {@include type-setting(1)}
@@ -37,3 +37,29 @@ h1 {@include type-setting(3)}
 h1, h2, h3, p, li {
 	margin-bottom: $base-line-height;
 }
+
+// Specific type settings
+li {
+  h1 {@include type-setting(1)}
+}
+
+.pretitle {@include type-setting(0)}
+
+.featured {
+  h2 {@include type-setting(3)}
+  .veredict {@include type-setting(1)}
+}
+
+.closing {
+  h2 {@include type-setting(0)}
+  p {@include type-setting(2)}
+}
+
+.celebrity {
+  h3 {@include type-setting(2)}
+}
+
+.social {
+  h2 {@include type-setting(0)}
+}
+

@@ -43,7 +43,7 @@ header {
 
 .popular {
 	h3::before {
-		content: " ";
+		content: "";
 		display: inline-block;
 		width: 2 * $base-line-height;
 		height: 2 * $base-line-height;
@@ -56,7 +56,7 @@ header {
 
 .unpopular {
 	h3::before {
-		content: " ";
+		content: "";
 		display: inline-block;
 		width: 2 * $base-line-height;
 		height: 2 * $base-line-height;

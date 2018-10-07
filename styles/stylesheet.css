@@ -77,22 +77,60 @@ p, li, button {
 }
 
 h3 {
-  font-size: 1.333rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
 h2 {
-  font-size: 1.777rem;
+  font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 h1 {
-  font-size: 2.369rem;
-  line-height: 2.5rem;
+  font-size: 3.375rem;
+  line-height: 3.75rem;
 }
 
 h1, h2, h3, p, li {
   margin-bottom: 1.25rem;
+}
+
+li h1 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.pretitle {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.featured h2 {
+  font-size: 3.375rem;
+  line-height: 3.75rem;
+}
+.featured .veredict {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.closing h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.closing p {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.celebrity h3 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.social h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 p {
@@ -139,7 +177,7 @@ header .down {
 }
 
 .popular h3::before {
-  content: " ";
+  content: "";
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
@@ -150,7 +188,7 @@ header .down {
 }
 
 .unpopular h3::before {
-  content: " ";
+  content: "";
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
