@@ -74,6 +74,10 @@ li h1 {
   font-weight: 400;
 }
 
+.add-celebrity button {
+  font-weight: 700;
+}
+
 .social h2 {
   font-weight: 400;
 }
@@ -155,8 +159,172 @@ li h1 {
   line-height: 1.25rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 p {
   max-width: 30rem;
+}
+
+.pretitle {
+  margin-bottom: 0;
+}
+
+.icon {
+  height: 2.25rem;
+}
+
+nav .icon {
+  height: 1.5rem;
+}
+
+.more .icon {
+  height: 1rem;
+}
+
+button {
+  height: 2.5rem;
+  border: 0;
+  padding: 0 1.25rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.featured .thumbs {
+  display: flex;
+}
+.featured .thumbs button {
+  flex: 1 0 auto;
+  height: 3.75rem;
+}
+
+nav,
+.featured .text,
+.message {
+  padding: 1.25rem 1.25rem 0;
+}
+nav:after,
+.featured .text:after,
+.message:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  margin-bottom: 1.25rem;
+}
+
+.featured {
+  margin-bottom: 1.25rem;
+}
+
+main > section {
+  margin-bottom: 1.25rem;
+}
+
+.closing {
+  display: flex;
+}
+.closing div {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+}
+.closing div h2,
+.closing div p {
+  margin-bottom: 0;
+}
+.closing .title {
+  justify-content: flex-end;
+}
+
+.message {
+  position: relative;
+}
+.message .icon {
+  height: 1rem;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+}
+
+.votes h2 {
+  padding: 0 1.25rem;
+}
+
+.celebrity .wrapper {
+  padding: 18.75rem 2.5rem 0;
+}
+.celebrity h3 {
+  margin-bottom: 0;
+}
+.celebrity .description {
+  height: 2.5rem;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+.celebrity .icon {
+  height: 1.5rem;
+}
+
+.vote-section {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1.25rem;
+}
+.vote-section .thumbs {
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.vote-section .up,
+.vote-section .down {
+  padding: 0 0.625rem;
+}
+.vote-section .vote {
+  border: 1px solid white;
+}
+
+.percentage-bar {
+  display: flex;
+}
+.percentage-bar div {
+  flex: 1 0 auto;
+  padding: 0 0.625rem;
+}
+.percentage-bar .percentage-down {
+  text-align: right;
+}
+
+.add-celebrity div {
+  padding: 1.25rem 1.25rem 0;
+}
+.add-celebrity button {
+  border: 2px solid #333333;
+  color: #333333;
+  margin-bottom: 1.25rem;
+}
+
+.social {
+  padding: 1.25rem 1.25rem 0;
+}
+.social h2,
+.social ul,
+.social li {
+  display: inline-block;
+}
+.social h2 {
+  margin-right: 1.25rem;
+}
+.social li {
+  margin-right: 1.25rem;
+}
+.social img {
+  vertical-align: middle;
+  height: 2rem;
 }
 
 header,
@@ -198,26 +366,27 @@ header .down {
   background-color: #EBEBEB;
 }
 
-.popular h3::before {
+.celebrity h3 {
+  position: relative;
+}
+.celebrity h3::before {
   content: "";
-  display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  left: -40px;
+  width: 30px;
+  height: 30px;
   background-color: #1CBBB4;
   background-image: url("../img/up.png");
-  background-size: cover;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .unpopular h3::before {
-  content: "";
-  display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
   background-color: #FFAD1D;
   background-image: url("../img/down.png");
-  background-size: cover;
-  background-position: center;
 }
 
 .celebrity section {
@@ -235,7 +404,7 @@ header .down {
 .add-celebrity {
   background-image: url("../img/people.png");
 }
-.add-celebrity section {
+.add-celebrity div {
   background-color: rgba(255, 255, 255, 0.7);
 }
 

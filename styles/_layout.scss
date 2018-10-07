@@ -1,6 +1,209 @@
-// Text max width
+// Mixins
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// General
+* {
+	box-sizing: border-box;
+}
+
+// Text
 $text-max-width: $base-font-size * 30;
 
 p {
 	max-width: $text-max-width;
+}
+
+.pretitle {
+	margin-bottom: 0;
+}
+
+// Icons
+.icon {
+	height: $base-font-size * 2.25;
+}
+
+nav {
+	.icon {
+		height: $base-font-size * 1.5;
+	}
+}
+
+.more {
+	.icon {
+		height: $base-font-size;
+	}
+}
+
+// Buttons
+button {
+	height: $base-line-height * 2;
+	border: 0;
+	padding: 0 $base-line-height;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+.featured {
+	.thumbs {
+		display: flex;
+
+		button {
+			flex: 1 0 auto;
+			height: $base-line-height * 3;
+		}
+	}
+}
+
+// Containers
+nav,
+.featured .text,
+.message {
+	@include clearfix;
+	padding: $base-line-height $base-line-height 0;
+}
+
+nav {
+	margin-bottom: $base-line-height;
+}
+
+.featured {
+	margin-bottom: $base-line-height;
+}
+
+main > section {
+	margin-bottom: $base-line-height;
+}
+
+.closing {
+	display: flex;
+
+	div {
+		flex: 1 0 auto;
+
+		display: flex;
+		align-items: center;
+
+		padding: $base-line-height * 0.5 $base-line-height;
+
+		h2,
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.title {
+		justify-content: flex-end;
+	}
+}
+
+.message {
+	position: relative;
+
+	.icon {
+		height: $base-font-size;
+		position: absolute;
+		top: $base-line-height;
+		right: $base-line-height;
+	}
+}
+
+.votes {
+	h2 {
+		padding: 0 $base-line-height;
+	}
+}
+
+.celebrity {
+	.wrapper {
+		padding: $base-line-height * 15 $base-line-height * 2 0;
+	}
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	.description {
+		height: $base-line-height * 2;
+		overflow: hidden;
+		margin-bottom: $base-line-height;
+	}
+
+	.icon {
+		height: $base-font-size * 1.5;
+	}
+}
+
+.vote-section {
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: $base-line-height;
+
+	.thumbs {
+		margin-right: $base-line-height;
+		margin-bottom: $base-line-height;
+	}
+
+	.up,
+	.down {
+		padding: 0 $base-line-height * 0.5;
+	}
+
+	.vote {
+		border: 1px solid white;
+	}
+}
+
+.percentage-bar {
+	display: flex;
+
+	div {
+		flex: 1 0 auto;
+		padding: 0 $base-line-height * 0.5;
+	}
+
+	.percentage-down {
+		text-align: right;
+	}
+}
+
+.add-celebrity {
+	div {
+		padding: $base-line-height $base-line-height 0;
+	}
+
+	button {
+		border: 2px solid $black;
+		color: $black;
+		margin-bottom: $base-line-height;
+	}
+}
+
+.social {
+	padding: $base-line-height $base-line-height 0;
+
+	h2,
+	ul,
+	li {
+		display: inline-block;
+	}
+
+	h2 {
+		margin-right: $base-line-height;
+	}
+
+	li {
+		margin-right: $base-line-height;
+	}
+
+	img {
+		vertical-align: middle;
+		height: 2rem;
+	}
 }
