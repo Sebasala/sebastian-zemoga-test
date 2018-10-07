@@ -88,6 +88,11 @@ header,
   color: white;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .more p {
   text-decoration: underline;
 }
