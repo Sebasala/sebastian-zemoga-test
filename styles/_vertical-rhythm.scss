@@ -59,6 +59,10 @@ li {
   h3 {@include type-setting(2)}
 }
 
+.percentage-bar {
+  div {@include type-setting(1)}
+}
+
 .social {
   h2 {@include type-setting(0)}
 }
