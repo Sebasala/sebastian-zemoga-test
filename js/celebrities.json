@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Kanye West",
+		"picture": "../img/kanye.png",
+		"lastVote": "2018-09-08",
+		"description": "Kanye Omari West (Atlanta, Georgia, 8 de junio de 1977) es un rapero, cantante, músico, diseñador y productor musical estadounidense1​ West inició sus pasos como productor en Roc-A-Fella Records, donde alcanzó cierto renombre por su trabajo en el álbum de Jay-Z The Blueprint, así como en sencillos de éxito para artistas como Alicia Keys, Ludacris y Janet Jackson. ",
+		"thumbsUp": 0,
+		"thumbsDown": 0,
+	},
+
+	{
+		"name": "Mark Zuckerberg",
+		"picture": "../img/mark.png",
+		"lastVote": "2018-09-08",
+		"description": "Mark Zucherberg was the creator of facebook an his CEO",
+		"thumbsUp": 0,
+		"thumbsDown": 0,
+	},
+
+	{
+		"name": "Cristina Fernández de Kirchner",
+		"picture": "../img/kirchner.png",
+		"lastVote": "2018-09-08",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat laboriosam illo illum molestiae possimus ex iste nemo et fugiat est repellendus perspiciatis voluptates ipsa asperiores totam, ullam quia harum?",
+		"thumbsUp": 0,
+		"thumbsDown": 0,
+	},
+
+	{
+		"name": "Malala Yousafzai",
+		"picture": "../img/malala.png",
+		"lastVote": "2018-09-08",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat laboriosam illo illum molestiae possimus ex iste nemo et fugiat est repellendus perspiciatis voluptates ipsa asperiores totam, ullam quia harum?",
+		"thumbsUp": 0,
+		"thumbsDown": 0,
+	}
+]
