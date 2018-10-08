@@ -9,6 +9,9 @@ window.onload = function() {
 	// Get vote now buttons
 	const voteNowList = document.getElementsByClassName('vote-now');
 
+	// Get vote again buttons
+	const voteAgainList = document.getElementsByClassName('vote-again');
+
 	// FUNCTIONS
 
 	// Define get thumb sibling function 
@@ -65,6 +68,14 @@ window.onload = function() {
 		description.classList.add('hidden');
 	}
 
+	// Display celebrity description
+	const displayCelebDescription = function(voteAgainButton) {
+		// Get description
+		let description = voteAgainButton.parentElement.previousElementSibling.previousElementSibling.getElementsByClassName('description')[0];		
+		// Display description
+		description.classList.remove('hidden');
+	}
+
 	// Hide vote section function
 	const hideVoteSection = function(voteButton) {
 		// Get vote section
@@ -73,12 +84,28 @@ window.onload = function() {
 		voteSection.classList.add('hidden');
 	}
 
+	// Display vote section function
+	const displaVoteSection = function(voteAgainButton) {
+		// Get vote section
+		let voteSection = voteAgainButton.parentElement.previousElementSibling;
+		// Display vote section
+		voteSection.classList.remove('hidden');
+	}
+
 	// Display thank you section function
 	const displayThankSection = function(voteButton) {
 		// Get thank you section
 		let thankSection = voteButton.parentElement.nextElementSibling;
 		// Display thank you section
 		thankSection.classList.remove('hidden');
+	}
+
+	// Hide thank you section function
+	const hideThankSection = function(voteAgainButton) {
+		// Get thank you section
+		let thankSection = voteAgainButton.parentElement;
+		// Hide thank you section
+		thankSection.classList.add('hidden');
 	}
 
 	// Vote function
@@ -91,6 +118,16 @@ window.onload = function() {
 		hideVoteSection(this);
 		// Display thank you section
 		displayThankSection(this);
+	}
+
+	// Vote again function
+	const voteAgain = function() {
+		// Hide thank you section
+		hideThankSection(this);
+		// Display celebrity description
+		displayCelebDescription(this);
+		// Display vote section
+		displaVoteSection(this);
 	}
 
 
@@ -111,5 +148,15 @@ window.onload = function() {
 		// Add a click event listener to register vote and display thank you message
 		element.addEventListener('click', vote);
 	});
+
+// VOTE AGAIN
+	
+	// Add click event listeners to all vote now buttons
+	// For each vote now button
+	Array.from(voteAgainList).forEach(function(element) {
+		// Add a click event listener to register vote and display thank you message
+		element.addEventListener('click', voteAgain);
+	});
+
 }
 
