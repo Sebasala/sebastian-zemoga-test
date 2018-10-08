@@ -1,3 +1,9 @@
+// Vars
+// Break points
+$bp-1: 680px;
+$bp-2: 1020px;
+$bp-3: 1360px;
+
 // Mixins
 @mixin clearfix {
   &:after {
@@ -62,6 +68,12 @@ button {
 }
 
 // Containers
+.container {
+	@include clearfix;
+	max-width: $bp-2;
+	margin: 0 auto;
+}
+
 nav,
 .featured .text,
 .message {
@@ -71,42 +83,107 @@ nav,
 
 nav {
 	margin-bottom: $base-line-height;
+	
+	ul {
+		
+		h1 {
+			margin-bottom: 0;
+		}
+
+		@media only screen and (min-width: $bp-2) {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+
+			li {
+				padding: $base-line-height;
+			}
+
+			.logo {
+				margin-right: auto;
+			}
+
+			li:first-child {
+				padding-left: 0;
+			}
+
+			li:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	@media only screen and (min-width: $bp-2) {
+		padding: 0;
+	}
+		
 }
 
-.featured {
+.container > .featured {
 	margin-bottom: $base-line-height;
+
+	@media only screen and (min-width: $bp-2) {
+		max-width: 370px;
+		margin-bottom: $base-line-height * 3;
+
+		.text {
+			padding-top: $base-line-height * 2;	
+		}
+
+		.veredict {
+			margin-bottom: $base-line-height * 2;
+		}
+
+	}
+	
 }
 
 .more {
+	
+	margin-bottom: $base-line-height;
+
 	p {
 		display: inline-block;
 	}
 }
 
-main > section {
+.container > section {
 	margin-bottom: $base-line-height;
 }
 
 .closing {
 	display: flex;
 
-	div {
-		flex: 1 0 auto;
+	.title {
+		flex: 1 0 33%;
+
+		display: flex;
+		align-items: center;
+
+		padding: $base-line-height * 0.5 $base-line-height;
+		justify-content: flex-end;
+
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+
+	.days {
+		flex: 1 0 66%;
 
 		display: flex;
 		align-items: center;
 
 		padding: $base-line-height * 0.5 $base-line-height;
 
-		h2,
 		p {
 			margin-bottom: 0;
 		}
 	}
+}
 
-	.title {
-		justify-content: flex-end;
-	}
+main {
+	@include clearfix;
 }
 
 .message {
@@ -118,11 +195,38 @@ main > section {
 		top: $base-line-height;
 		right: $base-line-height;
 	}
+
+	@media only screen and (min-width: $bp-2) {
+		margin-top: $base-line-height * 2;
+
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .votes {
 	h2 {
 		padding: 0 $base-line-height;
+
+		@media only screen and (min-width: $bp-2) {
+			padding: 0;
+		}
+	}
+}
+
+.celebrities {
+	@media only screen and (min-width: $bp-2) {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		.celebrity {
+			flex: 0 0 48%;
+			margin-bottom: $base-line-height * 2;
+
+			display: flex;
+			align-items: flex-end;
+		}
 	}
 }
 
@@ -179,15 +283,51 @@ main > section {
 	}
 }
 
-.add-celebrity {
+.container > .add-celebrity {
+	
+	margin-bottom: $base-line-height * 2;
+
 	div {
 		padding: $base-line-height $base-line-height 0;
+
+		@media only screen and (min-width: $bp-1) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h2 {
+				flex: 1 0 50%;
+				margin-right: $base-line-height;
+			}
+
+			button {
+				flex: 0 0 auto;
+			}
+		}
 	}
 
 	button {
 		border: 2px solid $black;
 		color: $black;
 		margin-bottom: $base-line-height;
+	}
+}
+
+footer {
+	.container {
+
+		border-top: 1px dotted $black;
+		padding-top: $base-line-height * 2;
+
+		&:after {
+			display: none;
+		}
+
+		@media only screen and (min-width: $bp-2) {
+			display: flex;
+			justify-content: space-between;
+		} 
+			
 	}
 }
 
@@ -211,5 +351,9 @@ main > section {
 	img {
 		vertical-align: middle;
 		height: $base-line-height;
+	}
+
+	@media only screen and (min-width: $bp-2) {
+		padding: $base-line-height 0 0;
 	}
 }

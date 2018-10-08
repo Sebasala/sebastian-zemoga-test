@@ -2,11 +2,13 @@ header,
 .celebrity,
 .add-celebrity {
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 }
 
 header {
+	background-position: center;
+
 	nav {
 		background-image: linear-gradient(rgba($black, 0.9), transparent);
 	}
@@ -28,9 +30,14 @@ header {
 	background-color: $gold;
 }
 
-.text,
-.closing .title {
+.text {
 	background-color: rgba($black, 0.7);
+}
+
+.closing {
+	.title {
+		background-image: linear-gradient(to right, transparent, rgba($black, 0.7));
+	}
 }
 
 .days {
@@ -85,6 +92,7 @@ header {
 
 .add-celebrity {
 	background-image: url('../img/people.png');
+	background-position: bottom;
 
 	div {
 		background-color: rgba(255,255,255,0.7);

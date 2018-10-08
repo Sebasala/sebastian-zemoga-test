@@ -12,8 +12,8 @@
 
 	<header style="background-image: url('img/pope.png');">
 		<nav>
-			<ul>
-				<li>
+			<ul class="container">
+				<li class="logo">
 					<h1><a href="index.html">Rule of Thumb.</a></h1>
 				</li>
 				<li><a href="trials.html">Past trials</a></li>
@@ -22,24 +22,26 @@
 				<li><a href="search.html"><img class="icon" src="img/search.png" alt="Search"></a></li>
 			</ul>
 		</nav>
-
-		<section class="featured">
-			<div class="text">
-				<hgroup>
-					<h3 class="pretitle">What's your opinion on</h3>
-					<h2>Pope Francis?</h2>
-				</hgroup>
-				<div class="description">
-					<p>He's talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)</p>
+		
+		<div class="container">
+			<section class="featured">
+				<div class="text">
+					<hgroup>
+						<h3 class="pretitle">What's your opinion on</h3>
+						<h2>Pope Francis?</h2>
+					</hgroup>
+					<div class="description">
+						<p>He's talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)</p>
+					</div>
+					<div class="more"><img class="icon" src="img/wiki.png" alt="Wiki"> <p><a href="https://en.wikipedia.org/wiki/Pope_Francis">More information</a></p></div>
+					<h3 class="veredict">What's your verdict?</h3>
 				</div>
-				<div class="more"><img class="icon" src="img/wiki.png" alt="Wiki"> <p><a href="https://en.wikipedia.org/wiki/Pope_Francis">More information</a></p></div>
-				<h3 class="veredict">What's your verdict?</h3>
-			</div>
-			<div class="thumbs">
-				<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
-				<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
-			</div>
-		</section>
+				<div class="thumbs">
+					<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
+					<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
+				</div>
+			</section>
+		</div>
 
 		<section class="closing">
 			<div class="title">
@@ -52,143 +54,147 @@
 	</header>
 
 	<main>
-		<section class="message">
-			<hgroup>
-				<h3 class="pretitle">Speak out. Be heard.</h3>
-				<h2>Be counted</h2>
-			</hgroup>
-			<div class="description">
-				<p>Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report.</p>
-			</div>
-			<div class="close">
-				<img class="icon" src="img/close.png" alt="Close">
-			</div>
-		</section>
-
-		<section class="votes">
-			<h2>Votes</h2>
-			<ul class="celebrities">
-				<li class="celebrity" style="background-image: url('img/kanye.png');">
-					<section>
-						<div class="wrapper">
-							<div class="info">
-								<h3>Kanye West</h3>
-								<p class="last"><strong>1 month ago</strong> in Entertainment</p>
-								<div class="description">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iusto laudantium animi odio non assumenda nihil illo sunt ad sequi itaque fugit, maiores tenetur culpa atque corrupti omnis harum magni!</p>
+		<div class="container">
+			<section class="message">
+				<hgroup>
+					<h3 class="pretitle">Speak out. Be heard.</h3>
+					<h2>Be counted</h2>
+				</hgroup>
+				<div class="description">
+					<p>Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report.</p>
+				</div>
+				<div class="close">
+					<img class="icon" src="img/close.png" alt="Close">
+				</div>
+			</section>
+			
+			<section class="votes">
+				<h2>Votes</h2>
+				<ul class="celebrities">
+					<li class="celebrity" style="background-image: url('img/kanye.png');">
+						<section>
+							<div class="wrapper">
+								<div class="info">
+									<h3>Kanye West</h3>
+									<p class="last"><strong>1 month ago</strong> in Entertainment</p>
+									<div class="description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iusto laudantium animi odio non assumenda nihil illo sunt ad sequi itaque fugit, maiores tenetur culpa atque corrupti omnis harum magni!</p>
+									</div>
+								</div>
+								<div class="vote-section">
+									<div class="thumbs">
+										<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
+										<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
+									</div>
+									<button class="vote">Vote now</button>
 								</div>
 							</div>
-							<div class="vote-section">
-								<div class="thumbs">
-									<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
-									<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
-								</div>
-								<button class="vote">Vote now</button>
+							<div class="percentage-bar">
+								<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
+								<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
 							</div>
-						</div>
-						<div class="percentage-bar">
-							<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
-							<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
-						</div>
-					</section>
-				</li>
-				<li class="celebrity unpopular" style="background-image: url('img/mark.png');">
-					<section>
-						<div class="wrapper">
-							<div class="info">
-								<h3>Mark Zuckerberg</h3>
-								<p class="last"><strong>1 month ago</strong> in Business</p>
-								<div class="description">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed minus reprehenderit a, aliquid quia libero vel aut recusandae ullam explicabo sit, repudiandae. Accusamus itaque sit dolorum temporibus ratione delectus, ducimus?</p>
+						</section>
+					</li>
+					<li class="celebrity unpopular" style="background-image: url('img/mark.png');">
+						<section>
+							<div class="wrapper">
+								<div class="info">
+									<h3>Mark Zuckerberg</h3>
+									<p class="last"><strong>1 month ago</strong> in Business</p>
+									<div class="description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed minus reprehenderit a, aliquid quia libero vel aut recusandae ullam explicabo sit, repudiandae. Accusamus itaque sit dolorum temporibus ratione delectus, ducimus?</p>
+									</div>
 								</div>
-							</div>
-							<div class="vote-section">
-								<div class="thumbs">
-									<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
-									<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
-								</div>
-								<button class="vote">Vote now</button>
-							</div>
-						</div>
-						<div class="percentage-bar">
-							<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
-							<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
-						</div>
-					</section>
-				</li>
-				<li class="celebrity unpopular" style="background-image: url('img/kirchner.png');">
-					<section>
-						<div class="wrapper">
-							<div class="info">
-								<h3>Cristina Fernández de Kirchner</h3>
-								<p class="last"><strong>1 month ago</strong> in Politics</p>
-								<div class="description">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatibus tempore, tempora eligendi sunt suscipit, adipisci facere sint nesciunt a magni, eos nobis! Ullam fugiat odio, recusandae, deleniti non suscipit?</p>
+								<div class="vote-section">
+									<div class="thumbs">
+										<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
+										<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
+									</div>
+									<button class="vote">Vote now</button>
 								</div>
 							</div>
-							<div class="vote-section">
-								<div class="thumbs">
-									<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
-									<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
-								</div>
-								<button class="vote">Vote now</button>
+							<div class="percentage-bar">
+								<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
+								<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
 							</div>
-						</div>
-						<div class="percentage-bar">
-							<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
-							<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
-						</div>
-					</section>
-				</li>
-				<li class="celebrity" style="background-image: url('img/malala.png');">
-					<section>
-						<div class="wrapper">
-							<div class="info">
-								<h3>Malala Yousafzai</h3>
-								<p class="last"><strong>1 month ago</strong> in Entertainment</p>
-								<div class="description">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, fuga velit! Illum voluptatem, praesentium? Eaque officia, vitae obcaecati, incidunt quo porro, asperiores velit non cupiditate hic quasi repellat modi eveniet!</p>
+						</section>
+					</li>
+					<li class="celebrity unpopular" style="background-image: url('img/kirchner.png');">
+						<section>
+							<div class="wrapper">
+								<div class="info">
+									<h3>Cristina Fernández de Kirchner</h3>
+									<p class="last"><strong>1 month ago</strong> in Politics</p>
+									<div class="description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatibus tempore, tempora eligendi sunt suscipit, adipisci facere sint nesciunt a magni, eos nobis! Ullam fugiat odio, recusandae, deleniti non suscipit?</p>
+									</div>
+								</div>
+								<div class="vote-section">
+									<div class="thumbs">
+										<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
+										<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
+									</div>
+									<button class="vote">Vote now</button>
 								</div>
 							</div>
-							<div class="vote-section">
-								<div class="thumbs">
-									<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
-									<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
-								</div>
-								<button class="vote">Vote now</button>
+							<div class="percentage-bar">
+								<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
+								<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
 							</div>
-						</div>
-						<div class="percentage-bar">
-							<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
-							<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
-						</div>
-					</section>
-				</li>
-			</ul>
-		</section>
-
-		<section class="add-celebrity">
-			<div>
-				<h2>Is there anyone else you would want us to add?</h2>
-				<button>Submit a name</button>
-			</div>
-		</section>
+						</section>
+					</li>
+					<li class="celebrity" style="background-image: url('img/malala.png');">
+						<section>
+							<div class="wrapper">
+								<div class="info">
+									<h3>Malala Yousafzai</h3>
+									<p class="last"><strong>1 month ago</strong> in Entertainment</p>
+									<div class="description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, fuga velit! Illum voluptatem, praesentium? Eaque officia, vitae obcaecati, incidunt quo porro, asperiores velit non cupiditate hic quasi repellat modi eveniet!</p>
+									</div>
+								</div>
+								<div class="vote-section">
+									<div class="thumbs">
+										<button class="up"><img class="icon" src="img/up.png" alt="Thumb up"></button>
+										<button class="down"><img class="icon" src="img/down.png" alt="Thumb down"></button>
+									</div>
+									<button class="vote">Vote now</button>
+								</div>
+							</div>
+							<div class="percentage-bar">
+								<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
+								<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
+							</div>
+						</section>
+					</li>
+				</ul>
+			</section>
+			
+			<section class="add-celebrity">
+				<div>
+					<h2>Is there anyone else you would want us to add?</h2>
+					<button>Submit a name</button>
+				</div>
+			</section>
+		</div>
 	</main>
 
 	<footer>
-		<nav>
-			<ul>
-				<li><a href="terms.html">Terms and Conditions</a></li>
-				<li><a href="privacy.html">Privacy Policy</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		<div class="social">
-			<h2>Follow us</h2>
-			<ul>
-				<li><a href="https://www.facebook.com/"><img class="icon" src="img/facebook.png" alt="Facebook"></a></li>
-				<li><a href="https://twitter.com"><img class="icon" src="img/twitter.png" alt="Twitter"></a></li>
-			</ul>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="terms.html">Terms and Conditions</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<div class="social">
+				<h2>Follow us</h2>
+				<ul>
+					<li><a href="https://www.facebook.com/"><img class="icon" src="img/facebook.png" alt="Facebook"></a></li>
+					<li><a href="https://twitter.com"><img class="icon" src="img/twitter.png" alt="Twitter"></a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 	
