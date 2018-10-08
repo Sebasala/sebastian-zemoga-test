@@ -208,12 +208,26 @@ button {
   cursor: pointer;
 }
 
+.up {
+  border: 2px solid #1CBBB4;
+}
+
+.down {
+  border: 2px solid #FFAD1D;
+}
+
 .featured .thumbs {
   display: flex;
 }
 .featured .thumbs button {
   flex: 1 0 auto;
   height: 3.75rem;
+}
+.featured .up {
+  border: none;
+}
+.featured .down {
+  border: none;
 }
 
 .container {
@@ -559,6 +573,10 @@ header .down {
 }
 .add-celebrity div {
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.selected {
+  border: 2px solid white;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

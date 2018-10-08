@@ -56,6 +56,14 @@ button {
 	cursor: pointer;
 }
 
+.up {
+	border: 2px solid $aqua;
+}
+
+.down {
+	border: 2px solid $gold;
+}
+
 .featured {
 	.thumbs {
 		display: flex;
@@ -64,6 +72,14 @@ button {
 			flex: 1 0 auto;
 			height: $base-line-height * 3;
 		}
+	}
+
+	.up {
+		border: none;
+	}
+
+	.down {
+		border: none;
 	}
 }
 
