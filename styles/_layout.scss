@@ -247,6 +247,10 @@ main {
 }
 
 .celebrity {
+	section {
+		width: 100%;
+	}
+
 	.wrapper {
 		padding: $base-line-height * 15 $base-line-height * 2 0;
 	}
@@ -281,8 +285,18 @@ main {
 		padding: 0 $base-line-height * 0.5;
 	}
 
-	.vote {
-		border: 1px solid white;
+	
+}
+
+.vote {
+	border: 1px solid white;
+}
+
+.thankyou {
+	margin-bottom: $base-line-height * 2;
+
+	p {
+		margin-bottom: $base-line-height * 2;
 	}
 }
 

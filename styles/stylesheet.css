@@ -380,6 +380,9 @@ main:after {
   }
 }
 
+.celebrity section {
+  width: 100%;
+}
 .celebrity .wrapper {
   padding: 18.75rem 2.5rem 0;
 }
@@ -408,8 +411,16 @@ main:after {
 .vote-section .down {
   padding: 0 0.625rem;
 }
-.vote-section .vote {
+
+.vote {
   border: 1px solid white;
+}
+
+.thankyou {
+  margin-bottom: 2.5rem;
+}
+.thankyou p {
+  margin-bottom: 2.5rem;
 }
 
 .percentage-bar {
@@ -577,6 +588,10 @@ header .down {
 
 .selected {
   border: 2px solid white;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
