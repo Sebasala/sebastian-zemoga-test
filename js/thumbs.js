@@ -36,8 +36,8 @@ window.onload = function() {
 									</div>
 								</div>
 								<div class="percentage-bar">
-									<div class="percentage-up"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
-									<div class="percentage-down">50% <img class="icon" src="img/down.png" alt="down"></div>
+									<div class="percentage-up" style="width: 0"><img class="icon" src="img/up.png" alt="Up"> 50%</div>
+									<div class="percentage-down" style="width: 0">50% <img class="icon" src="img/down.png" alt="down"></div>
 								</div>
 							</section>
 						</li>`
@@ -220,9 +220,6 @@ window.onload = function() {
 
 			// Change percentage up width
 			pUpBar.style.width = pUp + "%";
-
-			// Change percentage up display
-			pUpBar.style.flex = "0 0 auto";
 			
 			// Change percentage down innerHTML
 			let pDownHTML = `<img class="icon" src="img/up.png" alt="Up"> ${ pDown }%`
@@ -231,9 +228,6 @@ window.onload = function() {
 
 			// Change percentage down width
 			pDownBar.style.width = pDown + "%";
-
-			// Change percentage up display
-			pDownBar.style.flex = "0 0 auto";
 		}
 
 		// Vote function

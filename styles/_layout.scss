@@ -301,11 +301,11 @@ main {
 }
 
 .percentage-bar {
-	display: flex;
 
 	div {
-		flex: 0 0 auto;
-		padding: 0 $base-line-height * 0.5;
+		padding: 0;
+		overflow: hidden;
+		float: left;
 	}
 
 	.percentage-down {

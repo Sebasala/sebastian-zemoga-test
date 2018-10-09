@@ -424,7 +424,9 @@ main:after {
 }
 
 .percentage-bar div {
-  padding: 0 0.625rem;
+  padding: 0;
+  overflow: hidden;
+  float: left;
 }
 .percentage-bar .percentage-down {
   text-align: right;
@@ -590,4 +592,4 @@ header .down {
   display: none;
 }
 
-/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=stylesheet2.css.map */
