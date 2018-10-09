@@ -190,7 +190,7 @@ window.onload = function() {
 			};
 		}
 
-		// Update celebrities function
+		// Register vote function
 		const registerVote = function(voteButton) {
 			// Get vote selected
 			let voteSelected = getVoteSelected(voteButton);
@@ -210,9 +210,11 @@ window.onload = function() {
 				window.alert('No vote were selected');
 			}
 			// Calculate percentage up
-			let pUp = celebrities[index].thumbsUp / (celebrities[index].thumbsUp + celebrities[index].thumbsDown) * 100; 		
+			let pUpN = celebrities[index].thumbsUp / (celebrities[index].thumbsUp + celebrities[index].thumbsDown) * 100; 		
+			let pUp = pUpN.toFixed(1);
 			// Calculate percentage down
-			let pDown = 100 - pUp;
+			let pDownN = 100 - pUp;
+			let pDown = pDownN.toFixed(1);
 			// Change percentage up innerHTML
 			let pUpHTML = `<img class="icon" src="img/up.png" alt="Up"> ${ pUp }%`
 			let pUpBar = voteButton.parentElement.parentElement.nextElementSibling.getElementsByClassName('percentage-up')[0];

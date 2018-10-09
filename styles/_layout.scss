@@ -248,6 +248,7 @@ main {
 
 .celebrity {
 	section {
+		@include clearfix;
 		width: 100%;
 	}
 

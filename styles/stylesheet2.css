@@ -383,6 +383,11 @@ main:after {
 .celebrity section {
   width: 100%;
 }
+.celebrity section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .celebrity .wrapper {
   padding: 18.75rem 2.5rem 0;
 }
