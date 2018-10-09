@@ -7,8 +7,6 @@ window.onload = function() {
 	req.onload = function(){
 	  	celebrities = JSON.parse(req.responseText);
 
-	  	// VARIABLES
-
 	  	// Initialize celebrities HTML
 		let celebritiesHTML = "";		
 
@@ -160,10 +158,70 @@ window.onload = function() {
 			thankSection.classList.add('hidden');
 		}
 
+		// Get vote selected function
+		const getVoteSelected = function(voteButton) {
+			// Find thumb up 
+			let thumbUp = voteButton.previousElementSibling.getElementsByClassName('up')[0];
+			// If thumb up is selected
+			if (thumbUp.classList.contains('selected')) {
+				return 'up';
+			} else {
+				// Find thumb down 
+				let thumbDown = thumbUp.nextElementSibling;
+				// If thumb down is selected
+				if (thumbDown.classList.contains('selected')) {
+					return 'down';
+				} else {
+					return null;
+				}
+			}	
+		}
+
+		// Find celebrity function
+		const findCelebrity = function(voteButton) {
+			// Get celebrity name
+			let name = voteButton.parentElement.previousElementSibling.getElementsByTagName('h3')[0].innerText;
+			// For each celebrity in celebrities
+			for (let i = 0; i < celebrities.length; i++) {
+				// If celebrity.name = celebrity name provided
+				if (celebrities[i].name === name) {
+					return i;
+				}
+			};
+		}
+
+		// Update celebrities function
+		const updateCelebrities = function(voteButton) {
+			// Get vote selected
+			let voteSelected = getVoteSelected(voteButton);
+			// Find celebrity index of the celebrities array
+			let index = findCelebrity(voteButton);
+			// If vote selected is up
+			if (voteSelected === 'up') {
+				// Add a vote to thumbsUp value of this celebrity
+				celebrities[index].thumbsUp += 1;
+				console.log(celebrities);
+			} else if (voteSelected === 'down') {
+				// Add a vote to thumbsDown to this celebrity
+				celebrities[index].thumbsDown += 1;
+				console.log(celebrities);
+			} else {
+				// Alert no vote selected
+				window.alert('No vote were selected');
+			}
+		}
+
+		// Register vote function
+		const registerVote = function(voteButton) {
+			// Update celebrities array
+			updateCelebrities(voteButton);
+			// Update bar
+		}
+
 		// Vote function
 		const vote = function() {
 			// Register vote	
-
+			registerVote(this);
 			// Hide celebrity description
 			hideCelebDescription(this);
 			// Hide vote section
