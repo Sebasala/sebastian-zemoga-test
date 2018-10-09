@@ -12,6 +12,15 @@ window.onload = function() {
 	// Get vote again buttons
 	const voteAgainList = document.getElementsByClassName('vote-again');
 
+	// OBJECTS
+	// Get celebrities array from celebrities.json file
+	req=new XMLHttpRequest();
+	req.open("GET",'js/json/celebrities.json',true);
+	req.send();
+	req.onload=function(){
+	  celebrities = JSON.parse(req.responseText);
+	};
+
 	// FUNCTIONS
 
 	// Define get thumb sibling function 
