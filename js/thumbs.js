@@ -191,7 +191,7 @@ window.onload = function() {
 		}
 
 		// Update celebrities function
-		const updateCelebrities = function(voteButton) {
+		const registerVote = function(voteButton) {
 			// Get vote selected
 			let voteSelected = getVoteSelected(voteButton);
 			// Find celebrity index of the celebrities array
@@ -200,22 +200,40 @@ window.onload = function() {
 			if (voteSelected === 'up') {
 				// Add a vote to thumbsUp value of this celebrity
 				celebrities[index].thumbsUp += 1;
-				console.log(celebrities);
+
 			} else if (voteSelected === 'down') {
 				// Add a vote to thumbsDown to this celebrity
 				celebrities[index].thumbsDown += 1;
-				console.log(celebrities);
+
 			} else {
 				// Alert no vote selected
 				window.alert('No vote were selected');
 			}
-		}
+			// Calculate percentage up
+			let pUp = celebrities[index].thumbsUp / (celebrities[index].thumbsUp + celebrities[index].thumbsDown) * 100; 		
+			// Calculate percentage down
+			let pDown = 100 - pUp;
+			// Change percentage up innerHTML
+			let pUpHTML = `<img class="icon" src="img/up.png" alt="Up"> ${ pUp }%`
+			let pUpBar = voteButton.parentElement.parentElement.nextElementSibling.getElementsByClassName('percentage-up')[0];
+			pUpBar.innerHTML = pUpHTML;
 
-		// Register vote function
-		const registerVote = function(voteButton) {
-			// Update celebrities array
-			updateCelebrities(voteButton);
-			// Update bar
+			// Change percentage up width
+			pUpBar.style.width = pUp + "%";
+
+			// Change percentage up display
+			pUpBar.style.flex = "0 0 auto";
+			
+			// Change percentage down innerHTML
+			let pDownHTML = `<img class="icon" src="img/up.png" alt="Up"> ${ pDown }%`
+			let pDownBar = voteButton.parentElement.parentElement.nextElementSibling.getElementsByClassName('percentage-down')[0];
+			pDownBar.innerHTML = pDownHTML;
+
+			// Change percentage down width
+			pDownBar.style.width = pDown + "%";
+
+			// Change percentage up display
+			pDownBar.style.flex = "0 0 auto";
 		}
 
 		// Vote function

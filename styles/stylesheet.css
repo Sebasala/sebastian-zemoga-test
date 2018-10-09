@@ -427,7 +427,7 @@ main:after {
   display: flex;
 }
 .percentage-bar div {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   padding: 0 0.625rem;
 }
 .percentage-bar .percentage-down {
